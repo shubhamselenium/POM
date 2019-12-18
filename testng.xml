@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PrestaShop Application Automation Test For Suite Test ">
+  <test thread-count="5" name="PrestaShop Application Test">
+    <classes>
+      <class name="com.psc.testcases.T_1_LoginPageTest"/>
+      <class name="com.psc.testcases.T_2_HomePageTest"/>
+      <class name="com.psc.testcases.T_3_CustomerPageTest"/>
+      <class name="com.psc.testcases.T_4_OrdersPageTest"/>
+      <class name="com.psc.testcases.T_5_PaymentShippingTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  </suite> <!-- Suite -->

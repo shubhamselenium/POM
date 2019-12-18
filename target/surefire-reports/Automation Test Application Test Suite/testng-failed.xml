@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Automation Test Application Test Suite]">
+  <listeners>
+    <listener class-name="com.psc.Utility.TestNGListeners"/>
+    <listener class-name="com.psc.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Application Test Cases(failed)">
+    <classes>
+      <class name="com.psc.testcases.T_1_LoginPageTest">
+        <methods>
+          <include name="ExitPath"/>
+          <include name="loginTest"/>
+          <include name="crmLogoImageTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.psc.testcases.T_1_LoginPageTest -->
+      <class name="com.psc.testcases.T_2_HomePageTest">
+        <methods>
+          <include name="ExitPath"/>
+          <include name="setUp"/>
+          <include name="ValidatMonitoring"/>
+        </methods>
+      </class> <!-- com.psc.testcases.T_2_HomePageTest -->
+    </classes>
+  </test> <!-- Application Test Cases(failed) -->
+</suite> <!-- Failed suite [Automation Test Application Test Suite] -->

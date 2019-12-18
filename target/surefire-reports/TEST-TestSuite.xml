@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,359.88" tests="43" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Presta_shop\Presta_Shop_Cart"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Presta_shop\Presta_Shop_Cart"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\SHUBHA~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Presta_shop\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9114917984787765827.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\PuTTy\;D:\Python\Python37\Scripts\;D:\Python\Python37\;C:\Users\SHUBHAMDaa(^_^)\AppData\Local\Microsoft\WindowsApps;;D:\D_Drive\Project\eclipse-jee-photon-R-win32-x86_64\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\SHUBHAMDaa(^_^)"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="SHUBHAMDaa(^_^)"/>
+    <property name="java.class.path" value="D:\D_Drive\Project\eclipse-jee-photon-R-win32-x86_64\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.13.0.20190716-1623\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Presta_shop\Presta_Shop_Cart\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="loginPageTitleTest" classname="com.psc.testcases.T_1_LoginPageTest" time="0.035"/>
+  <testcase name="PSC_LogoImageTest" classname="com.psc.testcases.T_1_LoginPageTest" time="51.045">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;sho-img&quot;}&#10;  (Session info: chrome=78.0.3904.108)&#10;  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 50.12 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;&#10;System info: host: &apos;DESKTOP-U9QO90T&apos;, ip: &apos;192.168.1.224&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64006}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir8968_663525486}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: f1620b531f5cbbee819d210176d05297&#10;*** Element info: {Using=id, value=sho-img}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"id","selector":"sho-img"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'DESKTOP-U9QO90T', ip: '192.168.1.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64006}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir8968_663525486}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f1620b531f5cbbee819d210176d05297
+*** Element info: {Using=id, value=sho-img}
+	at com.psc.testcases.T_1_LoginPageTest.PSC_LogoImageTest(T_1_LoginPageTest.java:52)
+</failure>
+    <system-out><![CDATA[==============================[--Test_Is_Started--]===============================
+[____Test_Start____] :-PSC_LogoImageTest
+[....Start_Time....] :-Wed Dec 18 17:05:01 IST 2019
+==============================[--Test_Is_Failed--]===============================
+[__Test Failure Exception is occured__] : [TestResult name=PSC_LogoImageTest status=FAILURE method=T_1_LoginPageTest.PSC_LogoImageTest()[pri:2, instance:com.psc.testcases.T_1_LoginPageTest@103f852] output={null}]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 25176
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1576668890.278][WARNING]: Timed out connecting to Chrome, retrying...
+[1576668899.088][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="LoginTest" classname="com.psc.testcases.T_1_LoginPageTest" time="0.96"/>
+  <testcase name="HomePage" classname="com.psc.testcases.T_1_LoginPageTest" time="0.19"/>
+  <testcase name="validatDashBoardTest" classname="com.psc.testcases.T_2_HomePageTest" time="10.573"/>
+  <testcase name="ValidatHomePageTitleTest" classname="com.psc.testcases.T_2_HomePageTest" time="0.041"/>
+  <testcase name="ValidatProductsTest" classname="com.psc.testcases.T_2_HomePageTest" time="13.257"/>
+  <testcase name="ValidatProductsTest" classname="com.psc.testcases.T_2_HomePageTest" time="11.33"/>
+  <testcase name="ValidatProductsTest" classname="com.psc.testcases.T_2_HomePageTest" time="12.696"/>
+  <testcase name="ValidatProductsTest" classname="com.psc.testcases.T_2_HomePageTest" time="82.524">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;virtual_product&apos;]&quot;}&#10;  (Session info: chrome=78.0.3904.108)&#10;  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 50.10 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;&#10;System info: host: &apos;DESKTOP-U9QO90T&apos;, ip: &apos;192.168.1.224&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64409}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir13332_263166827}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: c0367be027707aa0f9cf12ca12691179&#10;*** Element info: {Using=xpath, value=//input[@id=&apos;virtual_product&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='virtual_product']"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'DESKTOP-U9QO90T', ip: '192.168.1.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64409}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir13332_263166827}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c0367be027707aa0f9cf12ca12691179
+*** Element info: {Using=xpath, value=//input[@id='virtual_product']}
+	at com.psc.testcases.T_2_HomePageTest.ValidatProductsTest(T_2_HomePageTest.java:75)
+</failure>
+    <system-out><![CDATA[==============================[--Test_Is_Started--]===============================
+[____Test_Start____] :-ValidatProductsTest
+[....Start_Time....] :-Wed Dec 18 17:09:03 IST 2019
+==============================[--Test_Is_Failed--]===============================
+[__Test Failure Exception is occured__] : [TestResult name=ValidatProductsTest status=FAILURE method=T_2_HomePageTest.ValidatProductsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.psc.testcases.T_2_HomePageTest@587c290d] output={null}]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 47523
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1576669133.176][WARNING]: Timed out connecting to Chrome, retrying...
+[1576669140.265][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="ValidatProductCategoriesTest" classname="com.psc.testcases.T_2_HomePageTest" time="11.05"/>
+  <testcase name="ValidatMonitoringTest" classname="com.psc.testcases.T_2_HomePageTest" time="8.277"/>
+  <testcase name="ValidatProductAttributesTest" classname="com.psc.testcases.T_2_HomePageTest" time="9.008"/>
+  <testcase name="ValidatProductFeaturesTest" classname="com.psc.testcases.T_2_HomePageTest" time="7.247"/>
+  <testcase name="ValidatManufacturersTest" classname="com.psc.testcases.T_2_HomePageTest" time="5.267"/>
+  <testcase name="CustomerPage" classname="com.psc.testcases.T_2_HomePageTest" time="0.014"/>
+  <testcase name="VerifyHomePageCustomer" classname="com.psc.testcases.T_3_CustomerPageTest" time="0.021"/>
+  <testcase name="ValidatCustomerTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="8.79"/>
+  <testcase name="ValidatCustomerTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="75.017">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;gender_1&quot;}&#10;  (Session info: chrome=78.0.3904.108)&#10;  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 50.05 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;&#10;System info: host: &apos;DESKTOP-U9QO90T&apos;, ip: &apos;192.168.1.224&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64901}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir2988_803230701}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 062bfadd0aea18026d72760c0e937dc5&#10;*** Element info: {Using=id, value=gender_1}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"id","selector":"gender_1"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'DESKTOP-U9QO90T', ip: '192.168.1.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64901}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir2988_803230701}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 062bfadd0aea18026d72760c0e937dc5
+*** Element info: {Using=id, value=gender_1}
+	at com.psc.testcases.T_3_CustomerPageTest.ValidatCustomerTest(T_3_CustomerPageTest.java:64)
+</failure>
+    <system-out><![CDATA[==============================[--Test_Is_Started--]===============================
+[____Test_Start____] :-ValidatCustomerTest
+[....Start_Time....] :-Wed Dec 18 17:14:15 IST 2019
+==============================[--Test_Is_Failed--]===============================
+[__Test Failure Exception is occured__] : [TestResult name=ValidatCustomerTest status=FAILURE method=T_3_CustomerPageTest.ValidatCustomerTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.psc.testcases.T_3_CustomerPageTest@4516af24] output={null}]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 35062
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1576669445.995][WARNING]: Timed out connecting to Chrome, retrying...
+[1576669452.056][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="ValidatCustomerTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="10.254"/>
+  <testcase name="ValidatAddressesTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="5.635"/>
+  <testcase name="ValidatGroupsTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="11.16"/>
+  <testcase name="ValidatShippingCartsTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="8.635"/>
+  <testcase name="ValidatCustomerServicesTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="9.639"/>
+  <testcase name="ValidatContactsTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="10.091"/>
+  <testcase name="validatTittlesTest" classname="com.psc.testcases.T_3_CustomerPageTest" time="8.911"/>
+  <testcase name="OrdersPage" classname="com.psc.testcases.T_3_CustomerPageTest" time="0.004"/>
+  <testcase name="ValidatOrdersTest" classname="com.psc.testcases.T_4_OrdersPageTest" time="12.394"/>
+  <testcase name="ValidatInvoicesTest" classname="com.psc.testcases.T_4_OrdersPageTest" time="7.143"/>
+  <testcase name="ValidatMerchandiseReturnsTest" classname="com.psc.testcases.T_4_OrdersPageTest" time="7.744"/>
+  <testcase name="ValidatDeliverySlipsTest" classname="com.psc.testcases.T_4_OrdersPageTest" time="50.461">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;maintab-AdminParentOrders&quot;]/a/span&quot;}&#10;  (Session info: chrome=78.0.3904.108)&#10;  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 50.08 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;&#10;System info: host: &apos;DESKTOP-U9QO90T&apos;, ip: &apos;192.168.1.224&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:65489}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir7200_1900174422}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: f28c0852f12a6336ad590ab2a41e796e&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;maintab-AdminParentOrders&quot;]/a/span}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="maintab-AdminParentOrders"]/a/span"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'DESKTOP-U9QO90T', ip: '192.168.1.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:65489}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\SHUBHA~1\AppData\Local\Temp\scoped_dir7200_1900174422}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f28c0852f12a6336ad590ab2a41e796e
+*** Element info: {Using=xpath, value=//*[@id="maintab-AdminParentOrders"]/a/span}
+	at com.psc.testcases.T_4_OrdersPageTest.ValidatDeliverySlipsTest(T_4_OrdersPageTest.java:62)
+</failure>
+    <system-out><![CDATA[==============================[--Test_Is_Started--]===============================
+[____Test_Start____] :-ValidatDeliverySlipsTest
+[....Start_Time....] :-Wed Dec 18 17:20:31 IST 2019
+==============================[--Test_Is_Failed--]===============================
+[__Test Failure Exception is occured__] : [TestResult name=ValidatDeliverySlipsTest status=FAILURE method=T_4_OrdersPageTest.ValidatDeliverySlipsTest()[pri:3, instance:com.psc.testcases.T_4_OrdersPageTest@4ae82894] output={null}]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 31047
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1576669808.006][WARNING]: Timed out connecting to Chrome, retrying...
+[1576669828.990][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="ValidatCreditSlipsTest" classname="com.psc.testcases.T_4_OrdersPageTest" time="9.744"/>
+  <testcase name="ValidatStatusesTest" classname="com.psc.testcases.T_4_OrdersPageTest" time="11.951"/>
+  <testcase name="ValidatOrderMessagesTest" classname="com.psc.testcases.T_4_OrdersPageTest" time="7.496"/>
+  <testcase name="Payment_Shipping_Page" classname="com.psc.testcases.T_4_OrdersPageTest" time="0.002"/>
+  <testcase name="ValidatModulesServicesTest" classname="com.psc.testcases.T_5_PaymentShippingTest" time="11.448"/>
+  <testcase name="ValidatModules_ThemesCatalogTest" classname="com.psc.testcases.T_5_PaymentShippingTest" time="35.367"/>
+  <testcase name="ValidatPositionsTest" classname="com.psc.testcases.T_5_PaymentShippingTest" time="26.175"/>
+  <testcase name="ValidatPaymentTest" classname="com.psc.testcases.T_5_PaymentShippingTest" time="7.575"/>
+  <testcase name="ValidatAdminCarriersTest" classname="com.psc.testcases.T_5_PaymentShippingTest" time="6.103"/>
+  <testcase name="ValidatPreferences" classname="com.psc.testcases.T_5_PaymentShippingTest" time="10.402"/>
+  <testcase name="ValidatMyshop" classname="com.psc.testcases.T_5_PaymentShippingTest" time="4.905"/>
+  <testcase name="CalenderPage" classname="com.psc.testcases.T_5_PaymentShippingTest" time="0.128"/>
+</testsuite>

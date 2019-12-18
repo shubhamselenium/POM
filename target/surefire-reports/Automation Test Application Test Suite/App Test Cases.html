@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>TestNG:  App Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>App Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 17 20:02:45 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>689 seconds (689966 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.ValidatAddressesTest()'><b>ValidatAddressesTest</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+<tr>
+<td title='com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest.ValidatAdminCarriersTest()'><b>ValidatAdminCarriersTest</b><br>Test class: com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest@371a67ec</td></tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.ValidatContactsTest()'><b>ValidatContactsTest</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+<tr>
+<td title='com.psc.testcases.T_4_OrdersPageTest.ValidatCreditSlipsTest()'><b>ValidatCreditSlipsTest</b><br>Test class: com.psc.testcases.T_4_OrdersPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_4_OrdersPageTest@262b2c86</td></tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.ValidatCustomerServicesTest()'><b>ValidatCustomerServicesTest</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.ValidatCustomerTest()'><b>ValidatCustomerTest</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+<tr>
+<td title='com.psc.testcases.T_4_OrdersPageTest.ValidatDeliverySlipsTest()'><b>ValidatDeliverySlipsTest</b><br>Test class: com.psc.testcases.T_4_OrdersPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_4_OrdersPageTest@262b2c86</td></tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.ValidatGroupsTest()'><b>ValidatGroupsTest</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.ValidatHomeHomePageTitleTest()'><b>ValidatHomeHomePageTitleTest</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_4_OrdersPageTest.ValidatInvoicesTest()'><b>ValidatInvoicesTest</b><br>Test class: com.psc.testcases.T_4_OrdersPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.psc.testcases.T_4_OrdersPageTest@262b2c86</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.ValidatManufacturersTest()'><b>ValidatManufacturersTest</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_4_OrdersPageTest.ValidatMerchandiseReturnsTest()'><b>ValidatMerchandiseReturnsTest</b><br>Test class: com.psc.testcases.T_4_OrdersPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_4_OrdersPageTest@262b2c86</td></tr>
+<tr>
+<td title='com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest.ValidatModulesServicesTest()'><b>ValidatModulesServicesTest</b><br>Test class: com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest</td>
+<td></td>
+<td>11</td>
+<td>com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest@371a67ec</td></tr>
+<tr>
+<td title='com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest.ValidatModules_ThemesCatalogTest()'><b>ValidatModules_ThemesCatalogTest</b><br>Test class: com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest</td>
+<td></td>
+<td>10</td>
+<td>com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest@371a67ec</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.ValidatMonitoring()'><b>ValidatMonitoring</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>12</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_4_OrdersPageTest.ValidatOrderMessagesTest()'><b>ValidatOrderMessagesTest</b><br>Test class: com.psc.testcases.T_4_OrdersPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.psc.testcases.T_4_OrdersPageTest@262b2c86</td></tr>
+<tr>
+<td title='com.psc.testcases.T_4_OrdersPageTest.ValidatOrdersTest()'><b>ValidatOrdersTest</b><br>Test class: com.psc.testcases.T_4_OrdersPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_4_OrdersPageTest@262b2c86</td></tr>
+<tr>
+<td title='com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest.ValidatPaymentTest()'><b>ValidatPaymentTest</b><br>Test class: com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest@371a67ec</td></tr>
+<tr>
+<td title='com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest.ValidatPositionsTest()'><b>ValidatPositionsTest</b><br>Test class: com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest@371a67ec</td></tr>
+<tr>
+<td title='com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest.ValidatPreferencesTest()'><b>ValidatPreferencesTest</b><br>Test class: com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_5_PaymentShippingTest$T_4_OrdersPageTest@371a67ec</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.ValidatProductAttributesTest()'><b>ValidatProductAttributesTest</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.ValidatProductCategories()'><b>ValidatProductCategories</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.ValidatProductFeaturesTest()'><b>ValidatProductFeaturesTest</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.ValidatProducts()'><b>ValidatProducts</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.ValidatShippingCartsTest()'><b>ValidatShippingCartsTest</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>10</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+<tr>
+<td title='com.psc.testcases.T_4_OrdersPageTest.ValidatStatusesTest()'><b>ValidatStatusesTest</b><br>Test class: com.psc.testcases.T_4_OrdersPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_4_OrdersPageTest@262b2c86</td></tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.VerifyHomePageCustomer()'><b>VerifyHomePageCustomer</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+<tr>
+<td title='com.psc.testcases.T_1_LoginPageTest.crmLogoImageTest()'><b>crmLogoImageTest</b><br>Test class: com.psc.testcases.T_1_LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.psc.testcases.T_1_LoginPageTest@46daef40</td></tr>
+<tr>
+<td title='com.psc.testcases.T_1_LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.psc.testcases.T_1_LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.psc.testcases.T_1_LoginPageTest@46daef40</td></tr>
+<tr>
+<td title='com.psc.testcases.T_1_LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.psc.testcases.T_1_LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.psc.testcases.T_1_LoginPageTest@46daef40</td></tr>
+<tr>
+<td title='com.psc.testcases.T_2_HomePageTest.validatDashBoardTest()'><b>validatDashBoardTest</b><br>Test class: com.psc.testcases.T_2_HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.psc.testcases.T_2_HomePageTest@12f41634</td></tr>
+<tr>
+<td title='com.psc.testcases.T_3_CustomerPageTest.validatTittlesTest()'><b>validatTittlesTest</b><br>Test class: com.psc.testcases.T_3_CustomerPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.psc.testcases.T_3_CustomerPageTest@13c27452</td></tr>
+</table><p>
+</body>
+</html>

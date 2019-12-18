@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Test Application Test Suite]">
+  <listeners>
+    <listener class-name="com.psc.Utility.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" name="Application Test Cases(failed)">
+    <classes>
+      <class name="com.psc.testcases.T_2_HomePageTest">
+        <methods>
+          <include name="ExitPath"/>
+          <include name="ValidatProductCategories"/>
+          <include name="ValidatProductFeaturesTest"/>
+          <include name="ValidatProductAttributesTest"/>
+          <include name="ValidatHomeHomePageTitleTest"/>
+          <include name="ValidatProducts"/>
+          <include name="setUp"/>
+          <include name="ValidatMonitoring"/>
+          <include name="ValidatManufacturersTest"/>
+          <include name="validatDashBoardTest"/>
+        </methods>
+      </class> <!-- com.psc.testcases.T_2_HomePageTest -->
+    </classes>
+  </test> <!-- Application Test Cases(failed) -->
+</suite> <!-- Failed suite [Automation Test Application Test Suite] -->

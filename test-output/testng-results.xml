@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="119014" started-at="2019-11-23T19:23:23 IST" finished-at="2019-11-23T19:25:22 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="119014" started-at="2019-11-23T19:23:23 IST" finished-at="2019-11-23T19:25:22 IST">
+      <class name="com.psc.testcases.T_2_HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="setUp" is-config="true" duration-ms="12639" started-at="2019-11-23T19:23:42 IST" finished-at="2019-11-23T19:23:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ValidatProductsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ValidatProductsTest" duration-ms="14337" started-at="2019-11-23T19:23:54 IST" data-provider="getPSCTestData" finished-at="2019-11-23T19:24:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Catalog only]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kiran]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123467.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatProductsTest -->
+        <test-method status="PASS" signature="ExitPath()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ExitPath" is-config="true" duration-ms="1578" started-at="2019-11-23T19:24:09 IST" finished-at="2019-11-23T19:24:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExitPath -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="setUp" is-config="true" duration-ms="12009" started-at="2019-11-23T19:24:10 IST" finished-at="2019-11-23T19:24:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ValidatProductsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ValidatProductsTest" duration-ms="9590" started-at="2019-11-23T19:24:22 IST" data-provider="getPSCTestData" finished-at="2019-11-23T19:24:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Search only]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shubhm]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[54321.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[654321.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[654321.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatProductsTest -->
+        <test-method status="PASS" signature="ExitPath()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ExitPath" is-config="true" duration-ms="1476" started-at="2019-11-23T19:24:32 IST" finished-at="2019-11-23T19:24:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExitPath -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="setUp" is-config="true" duration-ms="11999" started-at="2019-11-23T19:24:33 IST" finished-at="2019-11-23T19:24:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ValidatProductsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ValidatProductsTest" duration-ms="11725" started-at="2019-11-23T19:24:45 IST" data-provider="getPSCTestData" finished-at="2019-11-23T19:24:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nowhere]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ashish]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[44325.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[345621.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[654231.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatProductsTest -->
+        <test-method status="PASS" signature="ExitPath()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ExitPath" is-config="true" duration-ms="1486" started-at="2019-11-23T19:24:57 IST" finished-at="2019-11-23T19:24:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExitPath -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="setUp" is-config="true" duration-ms="12793" started-at="2019-11-23T19:24:58 IST" finished-at="2019-11-23T19:25:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ValidatProductsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ValidatProductsTest" duration-ms="9496" started-at="2019-11-23T19:25:11 IST" data-provider="getPSCTestData" finished-at="2019-11-23T19:25:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Everywhere]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nidhi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[56326.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[556666.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[188855.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatProductsTest -->
+        <test-method status="PASS" signature="ExitPath()[pri:0, instance:com.psc.testcases.T_2_HomePageTest@32464a14]" name="ExitPath" is-config="true" duration-ms="1345" started-at="2019-11-23T19:25:21 IST" finished-at="2019-11-23T19:25:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExitPath -->
+      </class> <!-- com.psc.testcases.T_2_HomePageTest -->
+      <class name="com.psc.testcases.T_1_LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.psc.testcases.T_1_LoginPageTest@6e2c9341]" name="setUp" is-config="true" duration-ms="14623" started-at="2019-11-23T19:23:23 IST" finished-at="2019-11-23T19:23:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:3, instance:com.psc.testcases.T_1_LoginPageTest@6e2c9341]" name="loginTest" duration-ms="724" started-at="2019-11-23T19:23:38 IST" data-provider="login_Data" finished-at="2019-11-23T19:23:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@javaclassesinpune.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="ExitPath()[pri:0, instance:com.psc.testcases.T_1_LoginPageTest@6e2c9341]" name="ExitPath" is-config="true" duration-ms="1746" started-at="2019-11-23T19:23:39 IST" finished-at="2019-11-23T19:23:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExitPath -->
+      </class> <!-- com.psc.testcases.T_1_LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
