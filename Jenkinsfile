@@ -1,7 +1,7 @@
 node 
 {
    def mvnHome
-   def jdk
+   
    stage('Git Checkout') 
      {     // for display purposes
           // Get some code from a GitHub repository
