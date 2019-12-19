@@ -24,8 +24,23 @@ node
               
             }
    
+    
+    
+    stage('Unit Testing + Integrationn Testing')
+    {
+        
+        echo 'Performing Unit Testing + Integrationn Testing'
+    
+    }
+    
+    stage('System Testing')
+    {
+        
+       echo'Performing System Tseing'
+       
+    }
    
-    stage('Maven Build') 
+    stage('System Delivery') 
          {
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
@@ -53,33 +68,7 @@ node
                   }
              }*/
             
-    stage('Unit Testing')
-    {
-        
-        echo 'Performing Unit Testing'
-        
-    }
     
-    stage('Integrationn Testing')
-    {
-        
-        echo 'Performing Integration Tesing'
-    
-    }
-    
-    stage('System Testing')
-    {
-        
-       echo'Performing System Tseing'
-       
-    }
-    
-    stage('Delivery')
-    {
-        
-        echo'Delivery the Code'
-        
-    }
           }
    
      
