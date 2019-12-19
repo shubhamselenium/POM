@@ -1,7 +1,7 @@
 package com.psc.Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.psc.Base.TestBase;
 
-//public class OrdersPage extends TestBase 
 
 public class P_5_Payment_Shipping extends TestBase
 {
@@ -78,7 +77,7 @@ public class P_5_Payment_Shipping extends TestBase
 			      
 			}
 			
-			public void VerifyMyshop() 
+			/*public void VerifyMyshop() 
 			{
 				driver.findElement(By.xpath("//span[contains(text(),'Connect to PrestaShop Marketplace account')]")).click();//Click on Connect to PrestaShop Marketplace account
 				
@@ -87,7 +86,7 @@ public class P_5_Payment_Shipping extends TestBase
 				((JavascriptExecutor)driver).executeScript("arguments[0].click();" , element);//Click On the My_Shop
 				
 				
-			}
+			}*/
 			
 
 			public P_6_Calender ClickOnCalender() 
