@@ -42,7 +42,7 @@ node
    stage('System Testing')
     {
         
-       echo'Performing System Tseing'
+       echo'Performing System Testing'
        
     }
    
