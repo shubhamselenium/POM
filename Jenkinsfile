@@ -16,14 +16,12 @@ node
             //jdk = tool 'jdk'
                 
       }
-   stage('Code Analysis')
+    stage('Code Analysis')
             {
-              steps
-              {
-                 input('Do You Want to Proceed?')
+               
         
                  echo "Analyzing the code"
-              }
+              
             }
    
    
@@ -55,7 +53,7 @@ node
                   }
              }*/
             
-            stage('Unit Testing')
+    stage('Unit Testing')
     {
         
         echo 'Performing Unit Testing'
