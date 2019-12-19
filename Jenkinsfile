@@ -1,7 +1,7 @@
 node 
 {
    def mvnHome
-   def jdk
+  // def jdk
    stage('Git Checkout') 
      {     // for display purposes
           // Get some code from a GitHub repository
@@ -13,7 +13,7 @@ node
          // **       in the global configuration.  
         
             mvnHome = tool 'Maven_3.6.2'
-            jdk = tool 'jdk'
+            //jdk = tool 'jdk'
                 
       }
    
@@ -31,7 +31,7 @@ node
                      bat(/"%MVN_HOME%\bin\mvn" package/)
                   }
              }
-             withEnv(["JAVA_HOME=$jdk"])
+             /*withEnv(["JAVA_HOME=$jdk"])
             {
                if (isUnix()) 
                   {  
@@ -43,7 +43,7 @@ node
                   {
                      bat(/"%JAVA_HOME%\bin\java" -version/)
                   }
-             }
+             }*/
           }
    
      stage('Code Analysis')
