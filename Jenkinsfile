@@ -12,7 +12,7 @@ node
          // ** NOTE: This 'M3' Maven tool must be configured
          // **       in the global configuration.  
         
-            mvnHome = tool 'Maven_3.6.2'
+            mvnHome = tool 'Maven_3.6.2','jdk'
         
                 
       }
