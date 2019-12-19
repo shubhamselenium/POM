@@ -76,6 +76,11 @@ node
             
     
           }
+   archive (includes: 'pkg/*.gem')
+   {
+   publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'test-output', reportFiles: 'ExtentReposhot.html', reportName: 'Piplined HTML Report', reportTitles: ''])
+   }
+   
    
      
 }
