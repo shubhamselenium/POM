@@ -1,7 +1,7 @@
 node 
 {
    def mvnHome
-   
+   def jdk
    stage('Git Checkout') 
      {     // for display purposes
           // Get some code from a GitHub repository
@@ -12,8 +12,8 @@ node
          // ** NOTE: This 'M3' Maven tool must be configured
          // **       in the global configuration.  
         
-            mvnHome = tool 'Maven_3.6.2','jdk'
-        
+            mvnHome = tool 'Maven_3.6.2'
+            jdk = tool 'jdk'
                 
       }
    
@@ -29,6 +29,19 @@ node
                else 
                   {
                      bat(/"%MVN_HOME%\bin\mvn" package/)
+                  }
+             }
+             withEnv(["JAVA_HOME=$jdk"])
+            {
+               if (isUnix()) 
+                  {  
+                     
+                     sh '"$JAVA_HOME/bin/java" -version'
+
+                  } 
+               else 
+                  {
+                     bat(/"%JAVA_HOME%\bin\java" -version/)
                   }
              }
           }
