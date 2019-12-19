@@ -16,6 +16,16 @@ node
             //jdk = tool 'jdk'
                 
       }
+   stage('Code Analysis')
+            {
+              steps
+              {
+                 input('Do You Want to Proceed?')
+        
+                 echo "Analyzing the code"
+              }
+            }
+   
    
     stage('Maven Build') 
          {
@@ -44,16 +54,35 @@ node
                      bat(/"%JAVA_HOME%\bin\java" -version/)
                   }
              }*/
+            
+            stage('Unit Testing')
+    {
+        
+        echo 'Performing Unit Testing'
+        
+    }
+    
+    stage('Integrationn Testing')
+    {
+        
+        echo 'Performing Integration Tesing'
+    
+    }
+    
+    stage('System Testing')
+    {
+        
+       echo'Performing System Tseing'
+       
+    }
+    
+    stage('Delivery')
+    {
+        
+        echo'Delivery the Code'
+        
+    }
           }
    
-     stage('Code Analysis')
-            {
-              steps
-              {
-                 input('Do You Want to Proceed?')
-        
-                 echo "Analyzing the code"
-              }
-            }
-   
+     
 }
