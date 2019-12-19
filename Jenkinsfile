@@ -2,7 +2,7 @@ node
 {
    def mvnHome
   // def jdk
-   stage('Git Checkout') 
+   stage('[_Git Checkout_]') 
      {     // for display purposes
           // Get some code from a GitHub repository
         
@@ -16,7 +16,7 @@ node
             //jdk = tool 'jdk'
                 
       }
-    stage('Code Analysis')
+    stage('[_Code Analysis_]')
             {
                
         
@@ -26,21 +26,21 @@ node
    
     
     
-    stage('Unit Testing + Integrationn Testing')
+    stage('[_Unit Testing + Integrationn Testing_]')
     {
         
         echo 'Performing Unit Testing + Integrationn Testing'
     
     }
     
-    stage('System Testing')
+   stage('[_System Testing_]')
     {
         
        echo'Performing System Tseing'
        
     }
    
-    stage('System Delivery') 
+    stage('[_System Release_]') 
          {
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
