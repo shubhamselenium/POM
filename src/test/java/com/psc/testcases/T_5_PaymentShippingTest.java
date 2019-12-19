@@ -72,11 +72,11 @@ public class T_5_PaymentShippingTest extends TestBase
 				PS.VerifyPreferences();
 			}
 			
-			@Test(priority=7)
+			/*@Test(priority=7)
 			public void ValidatMyshop()
 			{
 				PS.VerifyMyshop();
-			}
+			}*/
 			
 			
 			@Test(priority=8)
