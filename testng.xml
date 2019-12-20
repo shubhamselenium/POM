@@ -5,9 +5,10 @@
     <classes>
       <class name="com.psc.testcases.T_1_LoginPageTest"/>
       <class name="com.psc.testcases.T_2_HomePageTest"/>
-      <class name="com.psc.testcases.T_3_CustomerPageTest"/>
+      <!--<class name="com.psc.testcases.T_3_CustomerPageTest"/>
       <class name="com.psc.testcases.T_4_OrdersPageTest"/>
       <class name="com.psc.testcases.T_5_PaymentShippingTest"/>
+      <class name="com.psc.testcases.T_6_CalenderTest"/>-->
     </classes>
   </test> <!-- Test -->
   
