@@ -93,7 +93,7 @@ node
    }
    stage('Report Notification')
    {
-        emailext attachmentsPattern: '**/Jenkins/workspace/DeclarativePipeline_/test-output/ExtentReposhot.html', body: '''
+        emailext attachmentsPattern: '**/DeclarativePipeline_/test-output/ExtentReposhot.html', body: '''
         ''', replyTo: 'javaselenium681@gmail.com', subject: 'Email Report from - \'${env.JOB_NAME}\'', to: 'javaselenium681@gmail.com'   
    }
    
