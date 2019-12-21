@@ -73,15 +73,14 @@ node
                      bat(/"%JAVA_HOME%\bin\java" -version/)
                   }
              }*/
-            
     
           }
-   stage('Report')
+   stage('Result Report')
    {
    publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'test-output', reportFiles: 'ExtentReposhot.html', reportName: 'Piplined HTML Report', reportTitles: 'Pipeline Job'])
    }
    
-   stage('Email Notification')
+   stage('Email Alert Notification')
    {
    
       mail bcc: '', body: '''This is Jenkins Job Notification !
@@ -89,11 +88,13 @@ node
       To : Shubham
 
       Thanks...!''', cc: '', from: '', replyTo: '', subject: 'Jenkins DeclarativePipeline Job', to: 'javaselenium681@gmail.com'
-   
+      , 'readFile("test-output/ExtentReposhot.html"), mimeType: \'text/html\');'
+      
    }
    stage('Report Notification')
    {
-     emailext body: 'readFile("test-output/ExtentReposhot.html"), mimeType: \'text/html\');', replyTo: 'javaselenium681@gmail.com', subject: 'Email Report from - \'${env.JOB_NAME}\'', to: 'javaselenium681@gmail.com'
+        emailext attachmentsPattern: '**/Program Files (x86)/Jenkins/workspace/DeclarativePipeline_/test-output/ExtentReposhot.html , mimeType: \'text/html\');', body: '''
+        ''', replyTo: 'javaselenium681@gmail.com', subject: 'Email Report from - \'${env.JOB_NAME}\'', to: 'javaselenium681@gmail.com'   
    }
    
      
