@@ -94,7 +94,10 @@ node
    stage('Report Notification')
    {
        
-     emailext (to: 'javaselenium681@gmail.com', replyTo: 'javaselenium681@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: readFile("target/surefire-reports/emailable-report.html), mimeType: 'text/html');
+     emailext (to: 'javaselenium681@gmail.com', 
+               replyTo: 'javaselenium681@gmail.com', 
+               subject: "Email Report from - '${env.JOB_NAME}' ", 
+               body: readFile("target/surefire-reports/emailable-report.html), ContentType: 'text/html');
    
    }
    
