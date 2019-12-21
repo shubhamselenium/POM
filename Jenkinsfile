@@ -93,13 +93,8 @@ node
    }
    stage('Report Notification')
    {
-        /*emailext attachmentsPattern: '**/DeclarativePipeline_/test-output/ExtentReposhot.html', body: '''
-        ''', replyTo: 'javaselenium681@gmail.com', subject: 'Email Report from - \'${env.JOB_NAME}\'', to: 'javaselenium681@gmail.com'*/   
-   
-   
-   
+       
      emailext (to: 'javaselenium681@gmail.com', replyTo: 'javaselenium681@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ", body: readFile("target/surefire-reports/emailable-report.html), mimeType: 'text/html');
-   
    
    }
    
