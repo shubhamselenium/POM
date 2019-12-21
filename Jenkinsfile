@@ -88,7 +88,7 @@ node
       To : Shubham
 
       Thanks...!''', cc: '', from: '', replyTo: '', subject: 'Jenkins DeclarativePipeline Job', to: 'javaselenium681@gmail.com'
-      , 'readFile("test-output/ExtentReposhot.html"), mimeType: \'text/html\');'
+      
       
    }
    stage('Report Notification')
