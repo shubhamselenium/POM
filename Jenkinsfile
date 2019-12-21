@@ -81,6 +81,16 @@ node
    publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'test-output', reportFiles: 'ExtentReposhot.html', reportName: 'Piplined HTML Report', reportTitles: ''])
    }
    
+   stage('Email Notification')
+   {
+   
+      mail bcc: '', body: '''This is Jenkins Job Notification !
+      From : Jenkins
+      To : Shubham
+
+      Thanks...!''', cc: '', from: '', replyTo: '', subject: 'Jenkins DeclarativePipeline Job', to: 'javaselenium681@gmail.com'
+   
+   }
    
      
 }
