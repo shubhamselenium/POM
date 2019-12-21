@@ -78,7 +78,7 @@ node
           }
    stage('Report')
    {
-   publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'test-output', reportFiles: 'ExtentReposhot.html', reportName: 'Piplined HTML Report', reportTitles: ''])
+   publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'test-output', reportFiles: 'ExtentReposhot.html', reportName: 'Piplined HTML Report', reportTitles: 'Pipeline Job'])
    }
    
    stage('Email Notification')
