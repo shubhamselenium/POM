@@ -17,12 +17,7 @@ public class P_1_LoginPage extends TestBase {
 
 		@FindBy(xpath="//*[@id=\"login_form\"]/div[3]/button/span")
 		WebElement loginBtn;
-
-		
-		
-		//@FindBy(xpath="//button[contains(text(),'Sign Up')]")
-		//WebElement signUpBtn;
-
+	
 		@FindBy(id="shop-img")
 		WebElement crmLogo;
 
