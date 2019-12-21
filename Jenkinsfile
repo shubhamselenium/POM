@@ -91,6 +91,10 @@ node
       Thanks...!''', cc: '', from: '', replyTo: '', subject: 'Jenkins DeclarativePipeline Job', to: 'javaselenium681@gmail.com'
    
    }
+   stage('Report Notification')
+   {
+     emailext body: 'readFile("test-output/ExtentReposhot.html"), mimeType: \'text/html\');', replyTo: 'javaselenium681@gmail.com', subject: 'Email Report from - \'${env.JOB_NAME}\'', to: 'javaselenium681@gmail.com'
+   }
    
      
 }
