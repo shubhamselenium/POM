@@ -86,11 +86,11 @@
     
     <!-- https://mvnrepository.com/artifact/poi/poi -->
 
-        <dependency>
+    <!-- <dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.16-beta2</version>
-        </dependency>
+        </dependency> -->
 
 
 		<dependency>
