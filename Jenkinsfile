@@ -2,6 +2,9 @@ node
 {
   
    def mvnHome
+   def mailRecipients = "javaselenium@gmail.com"
+   def jobName = currentBuild.fullDisplayName
+  
   // def jdk
    stage('Git Checkout') 
      {     // for display purposes
@@ -110,9 +113,6 @@ node
    stage('Report Notification')
         {
        
-          def mailRecipients = "javaselenium@gmail.com"
-          def jobName = currentBuild.fullDisplayName
-
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
                  mimeType: 'text/html',
                  subject: "[Jenkins] ${jobName}",
