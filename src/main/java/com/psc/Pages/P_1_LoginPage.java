@@ -18,7 +18,7 @@ public class P_1_LoginPage extends TestBase {
 		@FindBy(xpath="//*[@id=\"login_form\"]/div[3]/button/span")
 		WebElement loginBtn;
 	
-		@FindBy(id="shop-img")
+		@FindBy(id="sho-img")
 		WebElement crmLogo;
 
 		//Initializing the Page Objects:
