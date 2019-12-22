@@ -94,7 +94,7 @@ node
   }
    
 finally {
-   post ('Email Alert Notification')
+   stage ('Email Alert Notification')
    {
       always  
       {
