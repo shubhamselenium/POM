@@ -96,8 +96,7 @@ node
 
    stage ('Email Alert Notification')
    {
-      always  
-      {
+      
       mail bcc: '', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
            cc: '', 
@@ -105,7 +104,6 @@ node
            replyTo: 'javaselenium681@gmail.com', 
            subject: "Status of pipeline: ${currentBuild.fullDisplayName}", 
            to: 'javaselenium681@gmail.com'
-      }
       
    }
    
@@ -121,7 +119,7 @@ node
               compressLog: true, 
               replyTo: 'javaselenium681@gmail.com', 
               subject: "Status: ${currentBuild.result?:'SUCCESS'}" , 
-                        Job: "${env.JOB_NAME}:${env.BUILD_NUMBER})", 
+                        "Job: ${env.JOB_NAME}:${env.BUILD_NUMBER})", 
               to: 'javaselenium681@gmail.com'
    
        }
