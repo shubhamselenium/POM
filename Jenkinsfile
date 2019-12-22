@@ -87,10 +87,10 @@ node
    
    
    
-   
+finally {
    stage('Result Report')
    {
- finally {
+ 
    publishHTML(target:[allowMissing: false, 
                        alwaysLinkToLastBuild: false, 
                        keepAll: true, 
