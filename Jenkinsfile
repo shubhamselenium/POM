@@ -78,7 +78,7 @@ node
    
    stage('Result Report')
    {
-   publishHTML(target:[allowMissing: false, 
+   publishHTML(target:[allowMissing: true, 
                        alwaysLinkToLastBuild: true, 
                        keepAll: true, 
                        reportDir: 'test-output', 
