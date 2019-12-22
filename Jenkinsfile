@@ -75,28 +75,42 @@ node
              }*/
     
           }
+   
    stage('Result Report')
    {
-   publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'test-output', reportFiles: 'ExtentReposhot.html', reportName: 'Piplined HTML Report', reportTitles: 'Pipeline Job'])
+   publishHTML(target:[allowMissing: false, 
+                       alwaysLinkToLastBuild: true, 
+                       keepAll: true, 
+                       reportDir: 'test-output', 
+                       reportFiles: 'ExtentReposhot.html', 
+                       reportName: 'Piplined HTML Report', 
+                       reportTitles: 'Pipeline Job'])
    }
    
    stage('Email Alert Notification')
    {
    
-      mail bcc: '', body: '''This is Jenkins Job Notification !
-      From : Jenkins
-      To : Shubham
+      mail bcc: '', 
+           body: '''This is Jenkins Job Notification !
+           From : Jenkins
+           To : Shubham
 
-      Thanks...!''', cc: '', from: '', replyTo: '', subject: 'Jenkins DeclarativePipeline Job', to: 'javaselenium681@gmail.com'
+           Thanks...!''', 
+              cc: '', from: '', 
+              replyTo: '', 
+              subject: 'Jenkins DeclarativePipeline Job', 
+              to: 'javaselenium681@gmail.com'
       
       
    }
+   
    stage('Report Notification')
    {
        
-     emailext attachmentsPattern: '**/ExtentReposhot.html', 
-              body: 'Find attachments', replyTo: 'javaselenium681@gmail.com',
-              subject: 'Email Report from - \'${env.JOB_NAME}\' ', 
+     emailext attachmentsPattern: '**/test-output/*.html', 
+              body: 'Find attachments', 
+              replyTo: 'javaselenium681@gmail.com',
+              subject: 'Email Report', 
               to: 'javaselenium681@gmail.com'
    
    }
