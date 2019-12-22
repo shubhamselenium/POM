@@ -99,16 +99,12 @@ finally {
       always  
       {
       mail bcc: '', 
-           body: "${env.BUILD_URL} has result ${currentBuild.result}"
-            '''This is Jenkins Job Notification !
-           From : Jenkins
-           To : Shubham
-
-           Thanks...!''', 
-              cc: '', from: '', 
-              replyTo: '', 
-              subject: 'Jenkins DeclarativePipeline Job',  "Status of pipeline: ${currentBuild.fullDisplayName}"
-              to: 'javaselenium681@gmail.com'
+           body: '${env.BUILD_URL} has result ${currentBuild.result}', 
+           cc: '', 
+           from: '', 
+           replyTo: 'javaselenium681@gmail.com', 
+           subject: 'Status of pipeline: ${currentBuild.fullDisplayName}', 
+           to: 'javaselenium681@gmail.com'
       }
       
    }
