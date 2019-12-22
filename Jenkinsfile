@@ -111,15 +111,10 @@ node
         {
        
           emailext{build( attachLog: true, 
-              attachmentsPattern: '**/test-output/*.html', 
-              body: '''<p>EXECUTED: Job <b>\\\'${env.JOB_NAME}:${env.BUILD_NUMBER})\\\'
-                       </b></p><p>View console output at "<a href="${env.BUILD_URL}"> 
-                       ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p> 
-                       <p><i>(Build log is attached.)</i></p>''', 
+              attachmentsPattern: '**/test-output/*.html',
               compressLog: true, 
               replyTo: 'javaselenium681@gmail.com', 
-              subject: 'Status: ${currentBuild.result?:\'SUCCESS\'} , Job: ${env.JOB_NAME}:${env.BUILD_NUMBER}', 
-                         to: 'javaselenium681@gmail.com')}
+              
    
        }
    
