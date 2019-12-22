@@ -117,7 +117,7 @@ node
                 
                  subject: "[Jenkins] ${jobName}",
                  to: "${mailRecipients}",
-                 replyTo: "${mailRecipients}"
+                 replyTo: "${mailRecipients}",
                  attachLog: true,  
                  compressLog: true
          
