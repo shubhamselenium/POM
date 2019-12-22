@@ -110,10 +110,10 @@ node
    stage('Report Notification')
         {
        
-          emailext{build( attachLog: true, 
-              attachmentsPattern: '**/test-output/*.html',
-              compressLog: true, 
-              replyTo: 'javaselenium681@gmail.com', 
+          emailext attachLog: true, 
+                   attachmentsPattern: "**/test-output/*.html",
+                   compressLog: true, 
+                   replyTo: "javaselenium681@gmail.com", 
               
    
        }
