@@ -97,7 +97,7 @@ node
    
    
 
-  /* stage ('Email Alert Notification')
+   stage ('Email Alert Notification')
    {
       
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
@@ -106,11 +106,12 @@ node
            from: '', 
            replyTo: "${mailRecipients}", 
            subject: "[Jenkins] ${jobName}", 
-           to: "${mailRecipients}"
+           to: "${mailRecipients}",
+           attachmentsPattern: '**/test-output/*.html'
       
-   }*/
+   }
    
-   stage('Email : Report Notification')
+   /*stage('Email : Report Notification')
         {
        
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
@@ -121,7 +122,7 @@ node
                  attachLog: true,  
                  compressLog: true
          
-       }
+       }*/
    
      
   
