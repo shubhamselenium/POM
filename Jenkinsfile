@@ -1,6 +1,6 @@
 node 
 {
-   try {
+  
    def mvnHome
   // def jdk
    stage('Git Checkout') 
@@ -76,18 +76,8 @@ node
              }*/
     
           }
-      currentBuild.result = 'SUCCESS'
-   }
    
-   
-   catch (err) 
-   {
-    currentBuild.result = 'FAILURE'
-  }
-   
-   
-   
-finally {
+ 
    stage('Result Report')
    {
  
@@ -98,8 +88,8 @@ finally {
                        reportFiles: 'ExtentReposhot.html', 
                        reportName: 'Piplined HTML Report', 
                        reportTitles: 'Pipeline Job'])
-         }
-  }   
+        
+    }   
 
    
    
