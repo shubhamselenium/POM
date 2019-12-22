@@ -76,24 +76,34 @@ node
              }*/
     
           }
+      currentBuild.result = 'SUCCESS'
+   }
+   
+   
+   catch (err) 
+   {
+    currentBuild.result = 'FAILURE'
+  }
+   
+   
+   
    
    stage('Result Report')
    {
-   publishHTML(target:[allowMissing: true, 
-                       alwaysLinkToLastBuild: true, 
+ finally {
+   publishHTML(target:[allowMissing: false, 
+                       alwaysLinkToLastBuild: false, 
                        keepAll: true, 
                        reportDir: 'test-output', 
                        reportFiles: 'ExtentReposhot.html', 
                        reportName: 'Piplined HTML Report', 
                        reportTitles: 'Pipeline Job'])
-   }
-      currentBuild.result = 'SUCCESS'
-}
-   catch (err) {
-    currentBuild.result = 'FAILURE'
-  }
+         }
+  }   
+
    
-finally {
+   
+
    stage ('Email Alert Notification')
    {
       always  
@@ -121,7 +131,7 @@ finally {
        }
    
      
-    }
+  
   }
      
 
