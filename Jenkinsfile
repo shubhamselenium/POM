@@ -111,7 +111,7 @@ node
       
    }
    
-   /*stage('Email : Report Notification')
+   stage('Email : Report Notification')
         {
        
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
@@ -122,7 +122,7 @@ node
                  attachLog: true,  
                  compressLog: true
          
-       }*/
+       }
    
      
   
