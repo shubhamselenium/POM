@@ -81,7 +81,7 @@ node
           }
    
  
-   stage('Result Report')
+   stage('Result : Report')
    {
  
             publishHTML(target:[allowMissing: false, 
@@ -97,24 +97,24 @@ node
    
    
 
-   stage ('Email Alert Notification')
+  /* stage ('Email Alert Notification')
    {
       
-      mail bcc: '', 
+      mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
            cc: '', 
            from: '', 
-           replyTo: 'javaselenium681@gmail.com', 
-           subject: "Status of pipeline: ${currentBuild.fullDisplayName}", 
-           to: 'javaselenium681@gmail.com'
+           replyTo: "${mailRecipients}", 
+           subject: "[Jenkins] ${jobName}", 
+           to: "${mailRecipients}"
       
-   }
+   }*/
    
-   stage('Report Notification')
+   stage('Email : Report Notification')
         {
        
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
-                
+                 attachmentsPattern: '**/test-output/*.html',
                  subject: "[Jenkins] ${jobName}",
                  to: "${mailRecipients}",
                  replyTo: "${mailRecipients}",
