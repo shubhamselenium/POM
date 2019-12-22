@@ -1,5 +1,6 @@
 node 
 {
+   try {
    def mvnHome
   // def jdk
    stage('Git Checkout') 
@@ -86,26 +87,34 @@ node
                        reportName: 'Piplined HTML Report', 
                        reportTitles: 'Pipeline Job'])
    }
+      currentBuild.result = 'SUCCESS'
+}
+   catch (err) {
+    currentBuild.result = 'FAILURE'
+  }
    
-   stage('Email Alert Notification')
+finally {
+   post ('Email Alert Notification')
    {
-   
+      always  
+      {
       mail bcc: '', 
-           body: '''This is Jenkins Job Notification !
+           body: "${env.BUILD_URL} has result ${currentBuild.result}"
+            '''This is Jenkins Job Notification !
            From : Jenkins
            To : Shubham
 
            Thanks...!''', 
               cc: '', from: '', 
               replyTo: '', 
-              subject: 'Jenkins DeclarativePipeline Job', 
+              subject: 'Jenkins DeclarativePipeline Job',  "Status of pipeline: ${currentBuild.fullDisplayName}"
               to: 'javaselenium681@gmail.com'
-      
+      }
       
    }
    
    stage('Report Notification')
-   {
+        {
        
      emailext attachmentsPattern: '**/test-output/*.html', 
               body: 'Find attachments', 
@@ -113,7 +122,10 @@ node
               subject: 'Email Report', 
               to: 'javaselenium681@gmail.com'
    
-   }
+       }
    
+     
+    }
+  }
      
 }
