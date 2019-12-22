@@ -110,13 +110,15 @@ node
    stage('Report Notification')
         {
        
-          emailext attachLog: true, 
-                   attachmentsPattern: '**/test-output/*.html', 
-                   body: '${SCRIPT, template="groovy-html.template"}', 
-                   compressLog: true, subject: 'Jenkins Job Status', 
-                   to: 'javaselenium681@gmail.com'
-              
-   
+          def mailRecipients = "javaselenium@gmail.com"
+          def jobName = currentBuild.fullDisplayName
+
+          emailext body: '''${SCRIPT, template="groovy-html.template"}''',
+                 mimeType: 'text/html',
+                 subject: "[Jenkins] ${jobName}",
+                 to: "${mailRecipients}",
+                 replyTo: "${mailRecipients}",
+         
        }
    
      
