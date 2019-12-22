@@ -26,26 +26,26 @@ node
             }
    
     stage('Unit Testing')
-    {
+          {
         
-        echo 'Performing Unit Testing'
+             echo 'Performing Unit Testing'
     
-    }
+          }
     
     
     stage('Integrationn Testing')
-    {
+         {
         
-        echo 'Performing Integrationn Testing'
+           echo 'Performing Integrationn Testing'
     
-    }
+         }
     
    stage('System Testing')
-    {
+         {
         
        echo'Performing System Testing'
        
-    }
+          }
    
     stage('System Release') 
          {
@@ -81,7 +81,7 @@ node
    stage('Result Report')
    {
  
-   publishHTML(target:[allowMissing: false, 
+            publishHTML(target:[allowMissing: false, 
                        alwaysLinkToLastBuild: false, 
                        keepAll: true, 
                        reportDir: 'test-output', 
@@ -99,11 +99,11 @@ node
       always  
       {
       mail bcc: '', 
-           body: '${env.BUILD_URL} has result ${currentBuild.result}', 
+           body: "${env.BUILD_URL} has result ${currentBuild.result}", 
            cc: '', 
            from: '', 
            replyTo: 'javaselenium681@gmail.com', 
-           subject: 'Status of pipeline: ${currentBuild.fullDisplayName}', 
+           subject: "Status of pipeline: ${currentBuild.fullDisplayName}", 
            to: 'javaselenium681@gmail.com'
       }
       
@@ -112,10 +112,15 @@ node
    stage('Report Notification')
         {
        
-     emailext attachmentsPattern: '**/test-output/*.html', 
-              body: 'Find attachments', 
-              replyTo: 'javaselenium681@gmail.com',
-              subject: 'Email Report', 
+          emailext attachLog: true, 
+              attachmentsPattern: '**/test-output/*.html', 
+              body: """<p>EXECUTED: Job <b>\\\'${env.JOB_NAME}:${env.BUILD_NUMBER})\\\'
+                       </b></p><p>View console output at "<a href="${env.BUILD_URL}"> 
+                       ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p> 
+                       <p><i>(Build log is attached.)</i></p>""", 
+              compressLog: true, 
+              replyTo: 'javaselenium681@gmail.com', 
+              subject: "Status: ${currentBuild.result?:\'SUCCESS\'}-Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'", 
               to: 'javaselenium681@gmail.com'
    
        }
