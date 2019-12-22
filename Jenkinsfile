@@ -106,8 +106,8 @@ node
            from: '', 
            replyTo: "${mailRecipients}", 
            subject: "[Jenkins] ${jobName}", 
-           to: "${mailRecipients}",
-           attachmentsPattern: '**/test-output/*.html'
+           to: "${mailRecipients}"
+          
       
    }
    
