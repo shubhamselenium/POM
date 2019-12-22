@@ -111,9 +111,10 @@ node
         {
        
           emailext attachLog: true, 
-                   attachmentsPattern: "**/test-output/*.html",
-                   compressLog: true, 
-                   replyTo: "javaselenium681@gmail.com", 
+                   attachmentsPattern: '**/test-output/*.html', 
+                   body: '${SCRIPT, template="groovy-html.template"}', 
+                   compressLog: true, subject: 'Jenkins Job Status', 
+                   to: 'javaselenium681@gmail.com'
               
    
        }
