@@ -120,8 +120,8 @@ node
                        <p><i>(Build log is attached.)</i></p>""", 
               compressLog: true, 
               replyTo: 'javaselenium681@gmail.com', 
-              subject: "Status: ${currentBuild.result?:\'SUCCESS\'} - 
-                        Job \'${env.JOB_NAME}:${env.BUILD_NUMBER})\'", 
+              subject: "Status: ${currentBuild.result?:'SUCCESS'} - 
+                        Job: ${env.JOB_NAME}:${env.BUILD_NUMBER})", 
               to: 'javaselenium681@gmail.com'
    
        }
