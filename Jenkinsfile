@@ -110,7 +110,7 @@ node
    stage('Report Notification')
         {
        
-          emailext (attachLog: true, 
+          emailext{build( attachLog: true, 
               attachmentsPattern: '**/test-output/*.html', 
               body: """<p>EXECUTED: Job <b>\'${env.JOB_NAME}:${env.BUILD_NUMBER})\'
                        </b></p><p>View console output at "<a href="${env.BUILD_URL}"> 
@@ -118,9 +118,9 @@ node
                        <p><i>(Build log is attached.)</i></p>""", 
               compressLog: true, 
               replyTo: 'javaselenium681@gmail.com', 
-              subject: "Status: ${currentBuild.result?:'SUCCESS'}" , 
+              subject: "Status: ${currentBuild.result?:'SUCCESS'}' , 
                         "Job: ${env.JOB_NAME}:${env.BUILD_NUMBER})", 
-                    to: 'javaselenium681@gmail.com')
+                         to: 'javaselenium681@gmail.com')}
    
        }
    
