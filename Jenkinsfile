@@ -2,8 +2,8 @@
 node{
  
   def mvnHome 
-  def mailRecipients = "javaselenium@gmail.com" 
-  def jobName = currentBuild.fullDisplayName
+  //def mailRecipients = "javaselenium@gmail.com" 
+ // def jobName = currentBuild.fullDisplayName
 
    stage('Git Checkout') 
      {    
@@ -81,6 +81,8 @@ node{
 
    stage ('Email : Alert Notification')
    {
+     def mailRecipients = "javaselenium@gmail.com" 
+     def jobName = currentBuild.fullDisplayName
 
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
@@ -94,7 +96,9 @@ node{
    
    stage('Email : Report Notification')
         {
-          
+           def mailRecipients = "javaselenium@gmail.com" 
+           def jobName = currentBuild.fullDisplayName
+         
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
                  attachmentsPattern: '**/*.html',
                  subject: "[Jenkins] ${jobName}",
