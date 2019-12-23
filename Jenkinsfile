@@ -1,10 +1,6 @@
 pipeline{
   agent any
 
-  
-   def mvnHome
-   def mailRecipients = "javaselenium@gmail.com"
-   def jobName = currentBuild.fullDisplayName
    triggers{ cron('H/20 * * * *') }
 
   // def jdk
@@ -19,7 +15,7 @@ pipeline{
          // ** NOTE: This 'M3' Maven tool must be configured
          // **       in the global configuration.  
         
-            mvnHome = tool 'Maven_3.6.2'
+            //mvnHome = tool 'Maven_3.6.2'
             //jdk = tool 'jdk'
                 
       }
@@ -55,6 +51,8 @@ pipeline{
    
     stage('System Release') 
          {
+              def mvnHome = tool 'Maven_3.6.2'
+
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
             {
@@ -102,7 +100,9 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
-      
+      def mailRecipients = "javaselenium@gmail.com"
+      def jobName = currentBuild.fullDisplayName
+
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
            cc: '', 
@@ -117,6 +117,9 @@ pipeline{
    stage('Email : Report Notification')
         {
        
+          def mailRecipients = "javaselenium@gmail.com"
+          def jobName = currentBuild.fullDisplayName
+          
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
                  attachmentsPattern: '**/*.html',
                  subject: "[Jenkins] ${jobName}",
