@@ -1,5 +1,6 @@
-node 
-{
+pipeline{
+  agent any
+
   
    def mvnHome
    def mailRecipients = "javaselenium@gmail.com"
@@ -125,7 +126,7 @@ node
          
        }
    
-     
+
   
   }
      
