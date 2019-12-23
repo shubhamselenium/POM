@@ -13,9 +13,9 @@ pipeline{
    stage('Git Checkout') 
      {     // for display purposes
           // Get some code from a GitHub repository
-        
+       steps{
           git 'https://github.com/shubhamselenium/POM'
-        
+       }
          // Get the Maven tool.
          // ** NOTE: This 'M3' Maven tool must be configured
          // **       in the global configuration.  
@@ -58,7 +58,7 @@ pipeline{
    
     stage('System Release') 
          {
-              
+           steps{
       def mvnHome = tool 'Maven_3.6.2'
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
@@ -71,7 +71,7 @@ pipeline{
                   {
                      bat(/"%MVN_HOME%\bin\mvn" package/)
                   }
-             }
+            }}
              /*withEnv(["JAVA_HOME=$jdk"])
             {
                if (isUnix()) 
@@ -92,7 +92,7 @@ pipeline{
  
    stage('Result : Report')
    {
- 
+     steps{
             publishHTML(target:[allowMissing: false, 
                        alwaysLinkToLastBuild: false, 
                        keepAll: true, 
@@ -100,7 +100,7 @@ pipeline{
                        reportFiles: 'ExtentReposhot.html', 
                        reportName: 'Piplined HTML Report', 
                        reportTitles: 'Pipeline Job'])
-        
+     }
     }   
 
    
@@ -108,6 +108,7 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
+     steps{
       def mailRecipients = "javaselenium@gmail.com"
           def jobName = currentBuild.fullDisplayName
 
@@ -118,13 +119,13 @@ pipeline{
            replyTo: "${mailRecipients}", 
            subject: "[Jenkins] ${jobName}", 
            to: "${mailRecipients}"
-          
+     }    
       
    }
    
    stage('Email : Report Notification')
         {
-       
+          steps{
          
           def mailRecipients = "javaselenium@gmail.com"
           def jobName = currentBuild.fullDisplayName
@@ -135,7 +136,7 @@ pipeline{
                  replyTo: "${mailRecipients}",
                  attachLog: true,  
                  compressLog: true
-         
+          }
        }
   }
 
