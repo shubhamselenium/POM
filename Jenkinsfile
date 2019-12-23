@@ -94,10 +94,10 @@ node{
    stage('Email : Report Notification')
    {
          
-          emailext body:""Job_URL: [${env.BUILD_URL}]" 
+          emailext body:"""Job_URL: [${env.BUILD_URL}]" 
                          || "[${currentBuild.fullDisplayName}]" 
                          || "Build_Number : [ ${env.BUILD_NUMBER} ]"
-                         || "Build_status : [${env.BUILD_STATUS}]"",
+                         || "Build_status : [${env.BUILD_STATUS}]""",
     
                  attachmentsPattern: '**/*.html',
                  subject: "Jenkins Job Name : [${env.JOB_NAME}]",
