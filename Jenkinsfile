@@ -94,9 +94,9 @@ node{
    {
          
           emailext body:"Job URL : [${env.BUILD_URL}] - [${currentBuild.fullDisplayName}]" 
-                        "Job Name : [${env.JOB_NAME}]"
-                        "Build Number : [ ${env.BUILD_NUMBER} ]"
-                        "Build status : [${env.BUILD_STATUS}]"
+                        -"Job Name : [${env.JOB_NAME}]"
+                        -"Build Number : [ ${env.BUILD_NUMBER} ]"
+                        -"Build status : [${env.BUILD_STATUS}]",
     
                  attachmentsPattern: '**/*.html',
                  subject: "This is DeclarativePipeline Job Status,,",
