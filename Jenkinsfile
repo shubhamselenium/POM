@@ -4,7 +4,8 @@ node
    def mvnHome
    def mailRecipients = "javaselenium@gmail.com"
    def jobName = currentBuild.fullDisplayName
-  
+   triggers{ cron('H/20 * * * *') }
+
   // def jdk
    stage('Git Checkout') 
      {     // for display purposes
