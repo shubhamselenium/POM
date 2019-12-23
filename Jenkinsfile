@@ -85,7 +85,7 @@ node{
            cc: '', 
            from: '', 
            replyTo: "javaselenium681@gmail.com", 
-           subject: "This is Jenkins Job status", 
+           subject: "This is DeclarativePipeline Job..${currentBuild.fullDisplayName}", 
            to: "javaselenium681@gmail.com"
  
    }
@@ -93,9 +93,9 @@ node{
    stage('Email : Report Notification')
    {
          
-          emailext body: '''This is Jenkins Job''',
+          emailext body: "${SCRIPT, template='regressionfailed.groovy'}",
                  attachmentsPattern: '**/*.html',
-                 subject: "This is Jenkins Job Status",
+                 subject: "This is DeclarativePipeline Job Status,,${currentBuild.fullDisplayName} ${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}",
                  to: "javaselenium681@gmail.com",
                  replyTo: "javaselenium681@gmail.com",
                  attachLog: true,  
@@ -104,9 +104,9 @@ node{
  
       stage('Trigger Schedul : Job ')
            {
-            triggers{
+            
                  cron('H */4 * * 1-5')
-            }
+           
            }
 
   
