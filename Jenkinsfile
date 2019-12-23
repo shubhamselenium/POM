@@ -81,7 +81,7 @@ node{
    {
      
       mail bcc: '', 
-           body: "${SCRIPT, template="groovy-html.template"}", 
+           body: '''This is Jenkins job''', 
            cc: '', 
            from: '', 
            replyTo: "javaselenium681@gmail.com", 
@@ -93,7 +93,7 @@ node{
    stage('Email : Report Notification')
    {
          
-          emailext body: "${SCRIPT, template="groovy-html.template"}",
+          emailext body: '''This is Jenkins Job''',
                  attachmentsPattern: '**/*.html',
                  subject: "This is Jenkins Job Status",
                  to: "javaselenium681@gmail.com",
