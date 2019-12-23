@@ -9,7 +9,10 @@ pipeline{
   // def jdk
   stages{
           
-          
+           def mvnHome = tool 'Maven_3.6.2'
+           def mailRecipients = "javaselenium@gmail.com"
+           def jobName = currentBuild.fullDisplayName
+    
    stage('Git Checkout') 
      {     // for display purposes
           // Get some code from a GitHub repository
@@ -58,7 +61,7 @@ pipeline{
    
     stage('System Release') 
          {
-           def mvnHome = tool 'Maven_3.6.2'
+          
            steps{
       
            // Run the maven build
@@ -109,8 +112,7 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
-     def mailRecipients = "javaselenium@gmail.com"
-          def jobName = currentBuild.fullDisplayName
+     
 
      steps{
       
@@ -127,8 +129,7 @@ pipeline{
    
    stage('Email : Report Notification')
         {
-           def mailRecipients = "javaselenium@gmail.com"
-          def jobName = currentBuild.fullDisplayName
+           
           steps{
          
          
