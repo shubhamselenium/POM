@@ -1,3 +1,6 @@
+ def mvnHome 
+           def mailRecipients 
+           def jobName
 pipeline{
   agent any
 
@@ -9,9 +12,7 @@ pipeline{
   // def jdk
   stages{
           
-           def mvnHome 
-           def mailRecipients 
-           def jobName
+          
     
    stage('Git Checkout') 
      {     // for display purposes
