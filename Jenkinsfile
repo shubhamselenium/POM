@@ -116,7 +116,7 @@ node
         {
        
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
-                 attachmentsPattern: '**/test-output/*.html',
+                 attachmentsPattern: '**/*.html',
                  subject: "[Jenkins] ${jobName}",
                  to: "${mailRecipients}",
                  replyTo: "${mailRecipients}",
