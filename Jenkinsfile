@@ -81,11 +81,12 @@ node{
    {
      
       mail bcc: '', 
-           body: '''This is Jenkins job''', 
+           body: '''[...This is Jenkins Build job Alert Notification...]'''
+                 "Job URL : [${env.BUILD_URL}]", 
            cc: '', 
            from: '', 
            replyTo: "javaselenium681@gmail.com", 
-           subject: "This is DeclarativePipeline Job..${currentBuild.fullDisplayName}", 
+           subject: "Jenkins Job Name : [${env.JOB_NAME}]", 
            to: "javaselenium681@gmail.com"
  
    }
@@ -93,10 +94,13 @@ node{
    stage('Email : Report Notification')
    {
          
-          emailext body:"Job URL : [${env.BUILD_URL}] - [${currentBuild.fullDisplayName}]  | Build Number : [ ${env.BUILD_NUMBER} ] |  Build status : [${env.BUILD_STATUS}]",
+          emailext body:""Job_URL: [${env.BUILD_URL}]" 
+                         || "[${currentBuild.fullDisplayName}]" 
+                         || "Build_Number : [ ${env.BUILD_NUMBER} ]"
+                         || "Build_status : [${env.BUILD_STATUS}]"",
     
                  attachmentsPattern: '**/*.html',
-                 subject: "This is DeclarativePipeline Job Status,,Job Name : [${env.JOB_NAME}]",
+                 subject: "Jenkins Job Name : [${env.JOB_NAME}]",
                  to: "javaselenium681@gmail.com",
                  replyTo: "javaselenium681@gmail.com",
                  attachLog: true,  
