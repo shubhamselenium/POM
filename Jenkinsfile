@@ -58,8 +58,9 @@ pipeline{
    
     stage('System Release') 
          {
+           def mvnHome = tool 'Maven_3.6.2'
            steps{
-      def mvnHome = tool 'Maven_3.6.2'
+      
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
             {
@@ -108,10 +109,11 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
-     steps{
-      def mailRecipients = "javaselenium@gmail.com"
+     def mailRecipients = "javaselenium@gmail.com"
           def jobName = currentBuild.fullDisplayName
 
+     steps{
+      
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
            cc: '', 
@@ -125,10 +127,11 @@ pipeline{
    
    stage('Email : Report Notification')
         {
+           def mailRecipients = "javaselenium@gmail.com"
+          def jobName = currentBuild.fullDisplayName
           steps{
          
-          def mailRecipients = "javaselenium@gmail.com"
-          def jobName = currentBuild.fullDisplayName
+         
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
                  attachmentsPattern: '**/*.html',
                  subject: "[Jenkins] ${jobName}",
