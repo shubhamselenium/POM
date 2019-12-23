@@ -1,10 +1,10 @@
- def mvnHome 
- def mailRecipients = "javaselenium@gmail.com" 
- def jobName = currentBuild.fullDisplayName
-
+ 
 node{
  
-  
+  def mvnHome 
+  def mailRecipients = "javaselenium@gmail.com" 
+  def jobName = currentBuild.fullDisplayName
+
    stage('Git Checkout') 
      {    
           // Get some code from a GitHub repository.
