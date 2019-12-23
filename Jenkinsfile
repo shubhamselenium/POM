@@ -81,8 +81,7 @@ node{
    {
      
       mail bcc: '', 
-           body: '''[...This is Jenkins Build job Alert Notification...]'''
-                 "Job URL : [${env.BUILD_URL}]", 
+           body: "[...This is Jenkins Build job Alert Notification...] Go To Job URL: [${env.BUILD_URL}]", 
            cc: '', 
            from: '', 
            replyTo: "javaselenium681@gmail.com", 
