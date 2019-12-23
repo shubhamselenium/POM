@@ -93,9 +93,9 @@ node{
    stage('Email : Report Notification')
    {
          
-          emailext body: '''This is Jenkins job'''"${PROJECT_URL}",
+          emailext body:"${env.BUILD_URL}",
                  attachmentsPattern: '**/*.html',
-                 subject: "This is DeclarativePipeline Job Status,,${currentBuild.fullDisplayName} ${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}",
+           subject: "This is DeclarativePipeline Job Status,,${env.BUILD_URL}${currentBuild.fullDisplayName} ${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}",
                  to: "javaselenium681@gmail.com",
                  replyTo: "javaselenium681@gmail.com",
                  attachLog: true,  
