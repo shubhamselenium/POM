@@ -98,7 +98,7 @@ node
    
    
 
-   stage ('Email Alert Notification')
+   stage ('Email : Alert Notification')
    {
       
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
