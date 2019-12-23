@@ -2,9 +2,7 @@
 node{
  
   def mvnHome 
-  //def mailRecipients = "javaselenium@gmail.com" 
- // def jobName = currentBuild.fullDisplayName
-
+  
    stage('Git Checkout') 
      {    
           // Get some code from a GitHub repository.
@@ -81,38 +79,34 @@ node{
 
    stage ('Email : Alert Notification')
    {
-     def mailRecipients = "javaselenium@gmail.com" 
-     def jobName = currentBuild.fullDisplayName
-
-      mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
-           body: "${env.BUILD_URL} has result ${currentBuild.result}", 
+     
+      mail bcc: '', 
+           body: "${SCRIPT, template="groovy-html.template"}", 
            cc: '', 
            from: '', 
-           replyTo: "${mailRecipients}", 
-           subject: "[Jenkins] ${jobName}", 
-           to: "${mailRecipients}"
+           replyTo: "javaselenium681@gmail.com", 
+           subject: "This is Jenkins Job status", 
+           to: "javaselenium681@gmail.com"
  
    }
    
    stage('Email : Report Notification')
-        {
-           def mailRecipients = "javaselenium@gmail.com" 
-           def jobName = currentBuild.fullDisplayName
+   {
          
-          emailext body: '''${SCRIPT, template="groovy-html.template"}''',
+          emailext body: "${SCRIPT, template="groovy-html.template"}",
                  attachmentsPattern: '**/*.html',
-                 subject: "[Jenkins] ${jobName}",
-                 to: "${mailRecipients}",
-                 replyTo: "${mailRecipients}",
+                 subject: "This is Jenkins Job Status",
+                 to: "javaselenium681@gmail.com",
+                 replyTo: "javaselenium681@gmail.com",
                  attachLog: true,  
                  compressLog: true
-          }
+   }
  
       stage('Trigger Schedul : Job ')
            {
-            
+            triggers{
                  cron('H */4 * * 1-5')
-            
+            }
            }
 
   
