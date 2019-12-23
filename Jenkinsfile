@@ -9,9 +9,9 @@ pipeline{
   // def jdk
   stages{
           
-           def mvnHome = tool 'Maven_3.6.2'
-           def mailRecipients = "javaselenium@gmail.com"
-           def jobName = currentBuild.fullDisplayName
+           def mvnHome 
+           def mailRecipients 
+           def jobName
     
    stage('Git Checkout') 
      {     // for display purposes
@@ -63,12 +63,13 @@ pipeline{
          {
           
            steps{
-      
+          mvnHome = tool 'Maven_3.6.2'
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
             {
                if (isUnix()) 
                   {
+                    
                      sh '"$MVN_HOME/bin/mvn"  package'
                   } 
                else 
@@ -112,8 +113,9 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
-     
-
+     jobName = currentBuild.fullDisplayName
+    
+mailRecipients = "javaselenium@gmail.com"
      steps{
       
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
@@ -129,6 +131,9 @@ pipeline{
    
    stage('Email : Report Notification')
         {
+          jobName = currentBuild.fullDisplayName
+    
+          mailRecipients = "javaselenium@gmail.com"
            
           steps{
          
