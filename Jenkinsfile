@@ -8,6 +8,7 @@ pipeline{
    triggers{ cron('H/20 * * * *') }
 
   // def jdk
+  stages{
    stage('Git Checkout') 
      {     // for display purposes
           // Get some code from a GitHub repository
@@ -125,7 +126,7 @@ pipeline{
                  compressLog: true
          
        }
-   
+  }
 
   
   }
