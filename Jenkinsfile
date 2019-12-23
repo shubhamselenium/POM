@@ -1,73 +1,55 @@
  def mvnHome 
-           def mailRecipients 
-           def jobName
-pipeline{
-  agent any
+ def mailRecipients = "javaselenium@gmail.com" 
+ def jobName = currentBuild.fullDisplayName
 
-   triggers
-  { 
-     cron('H/20 * * * *')
-   }
-
-  // def jdk
-  stages{
-          
-          
-    
+node{
+ 
+  
    stage('Git Checkout') 
-     {     // for display purposes
-          // Get some code from a GitHub repository
-       steps{
-          git 'https://github.com/shubhamselenium/POM'
-       }
-         // Get the Maven tool.
-         // ** NOTE: This 'M3' Maven tool must be configured
-         // **       in the global configuration.  
-        
-            
-            //jdk = tool 'jdk'
+     {    
+          // Get some code from a GitHub repository.
+      
+             git 'https://github.com/shubhamselenium/POM'
+    
+          // Get the Maven tool.
+      
+             mvnHome = tool 'Maven_3.6.2'
                 
       }
     stage('Code Analysis')
             {
-              steps{
-        
-                 echo "Analyzing the code"
-              }
+
+              echo "Analyzing the code"
               
             }
    
     stage('Unit Testing')
           {
-            steps{
+            
              echo 'Performing Unit Testing'
-            }
-    
+           
           }
     
     
     stage('Integrationn Testing')
          {
-           steps {
-           echo 'Performing Integrationn Testing'
-           }
+          
+              echo 'Performing Integrationn Testing'
+          
          }
     
    stage('System Testing')
          {
-           steps {
-       echo'Performing System Testing'
-           }
-          }
+           
+             echo'Performing System Testing'
+          
+         }
    
     stage('System Release') 
          {
-          
-           steps{
-          mvnHome = tool 'Maven_3.6.2'
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
-            {
+              {
                if (isUnix()) 
                   {
                     
@@ -77,28 +59,13 @@ pipeline{
                   {
                      bat(/"%MVN_HOME%\bin\mvn" package/)
                   }
-            }}
-             /*withEnv(["JAVA_HOME=$jdk"])
-            {
-               if (isUnix()) 
-                  {  
-                     
-                     sh '"$JAVA_HOME/bin/java" -version'
-
-                  } 
-               else 
-                  {
-                     bat(/"%JAVA_HOME%\bin\java" -version/)
-                  }
-             }*/
-       
-    
+              }
           }
    
  
    stage('Result : Report')
    {
-     steps{
+    
             publishHTML(target:[allowMissing: false, 
                        alwaysLinkToLastBuild: false, 
                        keepAll: true, 
@@ -106,7 +73,7 @@ pipeline{
                        reportFiles: 'ExtentReposhot.html', 
                        reportName: 'Piplined HTML Report', 
                        reportTitles: 'Pipeline Job'])
-     }
+
     }   
 
    
@@ -114,12 +81,7 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
-     
-     steps{
-      jobName = currentBuild.fullDisplayName
-    
-mailRecipients = "javaselenium@gmail.com"
-      
+
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
            cc: '', 
@@ -127,19 +89,12 @@ mailRecipients = "javaselenium@gmail.com"
            replyTo: "${mailRecipients}", 
            subject: "[Jenkins] ${jobName}", 
            to: "${mailRecipients}"
-     }    
-      
+ 
    }
    
    stage('Email : Report Notification')
         {
           
-          steps{
-         jobName = currentBuild.fullDisplayName
-    
-          mailRecipients = "javaselenium@gmail.com"
-           
-         
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
                  attachmentsPattern: '**/*.html',
                  subject: "[Jenkins] ${jobName}",
@@ -148,8 +103,13 @@ mailRecipients = "javaselenium@gmail.com"
                  attachLog: true,  
                  compressLog: true
           }
-       }
-  }
+ 
+      stage('Trigger Schedul : Job ')
+           {
+            
+                 cron('H */4 * * 1-5')
+            
+           }
 
   
   }
