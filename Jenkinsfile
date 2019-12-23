@@ -8,9 +8,8 @@ pipeline{
 
   // def jdk
   stages{
-          def mvnHome
-          def mailRecipients = "javaselenium@gmail.com"
-          def jobName = currentBuild.fullDisplayName
+          
+          
    stage('Git Checkout') 
      {     // for display purposes
           // Get some code from a GitHub repository
@@ -21,7 +20,7 @@ pipeline{
          // ** NOTE: This 'M3' Maven tool must be configured
          // **       in the global configuration.  
         
-            mvnHome = tool 'Maven_3.6.2'
+            
             //jdk = tool 'jdk'
                 
       }
@@ -60,7 +59,7 @@ pipeline{
     stage('System Release') 
          {
               
-           steps{
+      def mvnHome = tool 'Maven_3.6.2'
            // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) 
             {
@@ -86,7 +85,7 @@ pipeline{
                      bat(/"%JAVA_HOME%\bin\java" -version/)
                   }
              }*/
-           }
+       
     
           }
    
@@ -109,7 +108,8 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
-      
+      def mailRecipients = "javaselenium@gmail.com"
+          def jobName = currentBuild.fullDisplayName
 
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
@@ -126,7 +126,8 @@ pipeline{
         {
        
          
-          
+          def mailRecipients = "javaselenium@gmail.com"
+          def jobName = currentBuild.fullDisplayName
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
                  attachmentsPattern: '**/*.html',
                  subject: "[Jenkins] ${jobName}",
