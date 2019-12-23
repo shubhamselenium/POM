@@ -114,10 +114,11 @@ pipeline{
 
    stage ('Email : Alert Notification')
    {
-     jobName = currentBuild.fullDisplayName
+     
+     steps{
+      jobName = currentBuild.fullDisplayName
     
 mailRecipients = "javaselenium@gmail.com"
-     steps{
       
       mail bcc: '''${SCRIPT, template="groovy-html.template"}''', 
            body: "${env.BUILD_URL} has result ${currentBuild.result}", 
@@ -132,12 +133,12 @@ mailRecipients = "javaselenium@gmail.com"
    
    stage('Email : Report Notification')
         {
-          jobName = currentBuild.fullDisplayName
+          
+          steps{
+         jobName = currentBuild.fullDisplayName
     
           mailRecipients = "javaselenium@gmail.com"
            
-          steps{
-         
          
           emailext body: '''${SCRIPT, template="groovy-html.template"}''',
                  attachmentsPattern: '**/*.html',
